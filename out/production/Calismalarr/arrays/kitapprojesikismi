@@ -1,0 +1,78 @@
+/*
+            private static void kitapBilgiileGoruntule() throws InterruptedException {
+        System.out.println("Kitap adi ile aramak icin 1'e, Yazar adi ile aramak icin 2'ye basiniz. ");
+        System.out.println("Ana menuye donmek icin 0'a basiniz. Cikmak icin 6'ya basiniz. ");
+        int secim = scan.nextInt();
+        switch (secim) {
+            case 1: {
+                scan.nextLine();
+                System.out.print("Kitap adi giriniz : ");
+                String kitapAdi = scan.nextLine();
+                boolean bulunduMu = false;
+                for (int i = 0; i < kitaplarList.size(); i++) {
+                    if (kitaplarList.get(i).getKitapAdi().equalsIgnoreCase(kitapAdi)) {
+                        bulunduMu = true;
+                        System.out.println("Aradiginiz kriterlere uygun sonuc bulundu ve listelendi");
+                        System.out.print("Kitap no  : " + kitaplarList.get(i).getKitapNo() + " ");
+                        System.out.print("Kitap adi : " + kitaplarList.get(i).getKitapAdi() + " ");
+                        System.out.print("Yazar adi : " + kitaplarList.get(i).getYazarAdi() + " ");
+                        System.out.print("Fiyati    : " + kitaplarList.get(i).getKitapFiyati() + " ");
+                        System.out.println();
+                    }
+                }
+                if (!bulunduMu) System.out.println("Aradiginiz kriterler uygun sonuc bulunamadi. ");
+            }
+
+            while (true) {
+                System.out.println("Arama yapmaya devam etmek icin 1'e, Ana Menuye donmek icin 0'a basiniz.");
+                try {
+                    secim = scan.nextInt();
+                    if (secim == 1) kitapnoileGoruntule();
+                    else if (secim == 0) giris();
+                } catch (Exception e) {
+                    String str = scan.next();
+                    System.out.println("Hatali giris yaptiniz. ");
+                }
+            }
+
+            case 2: {
+                scan.nextLine();
+                System.out.print("Yazar adi giriniz : ");
+                String yazarAdi = scan.nextLine();
+                boolean bulunduMu = false;
+                for (int i = 0; i < kitaplarList.size(); i++) {
+                    if (kitaplarList.get(i).getYazarAdi().equalsIgnoreCase(yazarAdi)) {
+                        bulunduMu = true;
+                        System.out.println("Aradiginiz kriterlere uygun sonuc bulundu ve listelendi");
+                        System.out.print("Kitap no  : " + kitaplarList.get(i).getKitapNo() + " ");
+                        System.out.print("Kitap adi : " + kitaplarList.get(i).getKitapAdi() + " ");
+                        System.out.print("Yazar adi : " + kitaplarList.get(i).getYazarAdi() + " ");
+                        System.out.print("Fiyati    : " + kitaplarList.get(i).getKitapFiyati() + " ");
+                        System.out.println();
+                    }
+                }
+                if (!bulunduMu) System.out.println("Aradiginiz kriterler uygun sonuc bulunamadi. ");
+
+                while (true) {
+                    System.out.println("Arama yapmaya devam etmek icin 1'e, Ana Menuye donmek icin 0'a basiniz.");
+                    try {
+                        secim = scan.nextInt();
+                        if (secim == 1) kitapBilgiileGoruntule();
+                        else if (secim == 0) giris();
+                    } catch (Exception e) {
+                        String str = scan.next();
+                        System.out.println("Hatali giris yaptiniz. ");
+                    }
+                }
+            }
+            case 0:
+                giris();
+            case 6:
+                cikis();
+            default: {
+                System.out.println("Hatali giris yaptiniz. ");
+                kitapBilgiileGoruntule();
+            }
+        }
+    }
+             */
